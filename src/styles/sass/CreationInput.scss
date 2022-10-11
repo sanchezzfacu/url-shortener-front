@@ -1,0 +1,53 @@
+@import 'variables';
+
+.form-container {
+    width: 100%;
+    color: rgb(232, 134, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $white-bg;
+    padding: 150px 0;
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        input {
+            outline: none;
+            border: 1px solid #3486d2;
+            border-right: none;
+            padding-left: 15px;
+        }
+        button {
+            color: #fff;
+            border: none;
+            background: #3486d2;
+            padding: 0px 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    .url-info-none {
+        display: none;
+    }
+    .url-info-container {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width:1780px) {
+    form {
+        flex-direction: column;
+        input {
+            height: 40px;
+            width: 450px;
+        }
+        button {
+            height: 40px;                
+        }
+    }
+}

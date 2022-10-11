@@ -1,0 +1,42 @@
+.form-container {
+  width: 100%;
+  color: #e88686;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f2f2f2;
+  padding: 150px 0; }
+  .form-container form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .form-container form input {
+      outline: none;
+      border: 1px solid #3486d2;
+      border-right: none;
+      padding-left: 15px; }
+    .form-container form button {
+      color: #fff;
+      border: none;
+      background: #3486d2;
+      padding: 0px 15px;
+      font-weight: 600;
+      cursor: pointer; }
+  .form-container .url-info-none {
+    display: none; }
+  .form-container .url-info-container {
+    display: block; }
+
+@media screen and (min-width: 1280px) and (max-width: 1780px) {
+  form {
+    flex-direction: column; }
+    form input {
+      height: 40px;
+      width: 450px; }
+    form button {
+      height: 40px; } }
+
+/*# sourceMappingURL=CreationInput.css.map */
