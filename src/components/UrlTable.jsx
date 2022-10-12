@@ -8,7 +8,7 @@ function UrlTable({urlInfo}) {
     useEffect(() => {
 
     }, [urlInfo])
-
+    
     return (
         <div className="table-container">
             { urlInfo?.map(el => {

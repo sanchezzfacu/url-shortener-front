@@ -46,7 +46,8 @@
       padding: 15px; }
       .form-container .url-info-container .url-created-info h4 {
         font-size: 1.1em;
-        color: #fff; }
+        color: #fff;
+        text-align: center; }
         .form-container .url-info-container .url-created-info h4 a {
           color: #3694ca;
           transition: all ease 0.3s; }
@@ -87,7 +88,7 @@
       .form-container .url-info-container .url-created-info {
         flex-direction: column; }
         .form-container .url-info-container .url-created-info h4 {
-          margin: 10px 0; }
+          margin: 10px auto; }
           .form-container .url-info-container .url-created-info h4 a {
             font-size: 1.2em; }
     .form-container .create-another-url {
@@ -138,14 +139,16 @@
   .form-container form {
     display: flex;
     width: 80%;
-    flex-direction: column; }
+    padding: 100px 0; }
     .form-container form input {
-      height: 40px;
+      height: 70px;
       width: 450px;
-      padding-left: 15px; }
+      padding-left: 15px;
+      font-size: 1.2em; }
     .form-container form button {
-      height: 40px;
-      padding: 0px 15px; }
+      height: 70px;
+      padding: 0px 15px;
+      font-size: 1.2em; }
   .form-container .url-info-container {
     width: 60%; }
     .form-container .url-info-container .url-created-info h4 a {

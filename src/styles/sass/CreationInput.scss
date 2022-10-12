@@ -53,6 +53,7 @@
             h4 {
                 font-size: 1.1em;
                 color: #fff;
+                text-align: center;
                 a {
                     color: #3694ca;
                     
@@ -110,7 +111,7 @@
             .url-created-info {
                 flex-direction: column;
                 h4 {
-                    margin: 10px 0;
+                    margin: 10px auto;
                     a {
                         font-size: 1.2em;
                     }
@@ -196,15 +197,17 @@
         form {
             display: flex;
             width: 80%;
-            flex-direction: column;
+            padding: 100px 0;
             input {
-                height: 40px;
+                height: 70px;
                 width: 450px;
                 padding-left: 15px;
+                font-size: 1.2em;
             }
             button {
-                height: 40px;         
+                height: 70px;         
                 padding: 0px 15px;
+                font-size: 1.2em;
             }
         }
         .url-info-container {
