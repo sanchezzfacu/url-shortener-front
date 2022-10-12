@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
@@ -7,6 +7,7 @@ function Redirect() {
 
     async function redirect (id) {
         let json = await axios.get('/redirect/' + id)
+        console.log(json)
         let url = json.data
         
         window.location.href = url
@@ -15,10 +16,6 @@ function Redirect() {
     useEffect(() => {
         redirect(id)
     })
-
-    return (
-        <div></div>
-    )
 }
 
 export default Redirect

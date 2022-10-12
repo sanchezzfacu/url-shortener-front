@@ -2,7 +2,6 @@
 
 .form-container {
     width: 100%;
-    color: rgb(232, 134, 134);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,24 +16,30 @@
         flex-direction: row;
         z-index: 1;
         border-radius: 20px;
-        border: 1px solid rgb(64, 155, 212);
+        border: 1px solid #409bd4;
         input {
             outline: none;
             border: 1px solid #3486d2;
             border-right: none;
-            height: 40px;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
+            height: 45px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-left: 1px solid #409bd4;
         }
         button {
             color: #fff;
+            transition: all ease 0.3s;
             border: none;
             background: #3486d2;
             font-weight: 600;
             cursor: pointer;
-            height: 40px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
+            height: 45px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        button:hover {
+            transition: all ease 0.3s;
+            background: #1b5c98;
         }
     }
 
@@ -49,8 +54,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            padding: 15px;
+            padding: 10px;
             h4 {
+                width: 90%;
+                overflow: hidden;
                 font-size: 1.1em;
                 color: #fff;
                 text-align: center;
@@ -81,9 +88,13 @@
         bottom: 30px;
         a {
             color: #fff;
+            transition: all ease 0.3s;
             h3 {
                 font-weight: 200;
             }
+        }
+        a:hover {
+            color: rgb(106, 106, 106);
         }
     }
     .url-info-none {
@@ -98,12 +109,13 @@
             width: 96%;
             input {
                 width: 100%;
-                padding: 10px;
+                padding-left: 15px;
+                font-size: 1.2em;  
             }
             button {
                 margin-right: 20px;
-                height: 40px;       
-                padding: 0px 10px;         
+                height: 45px;       
+                padding: 0px 10px;       
             }
         }
         .url-info-container {
@@ -112,6 +124,7 @@
                 flex-direction: column;
                 h4 {
                     margin: 10px auto;
+                    overflow: hidden;
                     a {
                         font-size: 1.2em;
                     }
@@ -132,10 +145,11 @@
             input {
                 width: 60%;
                 padding: 10px;
+                height: 45px;
             }
             button {
                 margin-right: 20px;
-                height: 40px;       
+                height: 45px;       
                 padding: 0px 10px;         
             }
         }
@@ -192,20 +206,20 @@
         }
     }
 }
-@media screen and (min-width: 1781px) and (max-width:2400px) {
+@media screen and (min-width: 1781px) and (max-width:2600px) {
     .form-container {
         form {
             display: flex;
             width: 80%;
             padding: 100px 0;
             input {
-                height: 70px;
+                height: 60px;
                 width: 450px;
                 padding-left: 15px;
                 font-size: 1.2em;
             }
             button {
-                height: 70px;         
+                height: 60px;         
                 padding: 0px 15px;
                 font-size: 1.2em;
             }

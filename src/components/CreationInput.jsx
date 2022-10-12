@@ -39,7 +39,7 @@ function CreationInput() {
             <div className={Object.entries(urlInfo).length ? 'url-info-container' : 'url-info-none'}>
                 <div className='url-created-info'>
                     <h4>{urlInfo.fullUrlVersion}</h4>
-                    <h4><a href={urlInfo.shortUrlVersion}>{axios.defaults.baseURL + '/' + urlInfo.shortUrlVersion}</a></h4>
+                    <h4><a href={urlInfo.shortUrlVersion}>{'https://url-shortener-front-six.vercel.app/' + urlInfo.shortUrlVersion}</a></h4>
                 </div>
                 <hr />
                 <a className='create-another-url' href="/">Create another short url</a>

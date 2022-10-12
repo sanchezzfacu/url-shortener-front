@@ -17,7 +17,7 @@
         .table-row {
             display: flex;
             flex-direction: column;
-            margin: 20px auto;
+            margin: 10px auto;
             width: 90%;
             text-align: start;
             h4, h3, h2 {
@@ -50,16 +50,16 @@
 
 @media screen and (min-width:300px) and (max-width:720px) {
     .table-container {
-        width: 100%;
+        width: 96%;
         .table-info-container {
             width: 96%;
             flex-direction: column;
-            // .table-row {
-            //     h4, h3, h2 {
-            //         a {
-            //         }
-            //     }
-            // }
+            .table-row {
+                h4, h3, h2 {
+                    a {
+                    }
+                }
+            }
             .table-row-cli {
                 width: 150px;
             }
@@ -75,12 +75,12 @@
             flex-direction: column;
             width: 60%;
 
-            // .table-row {
-            //     h4, h3, h2 {
-            //         a {
-            //         }
-            //     }
-            // }
+            .table-row {
+                h4, h3, h2 {
+                    a {
+                    }
+                }
+            }
         }
     }
 }
@@ -95,24 +95,30 @@
             .row-container {
                 width: 100%;
             }
-            // .table-row {
-            //     h4, h3, h2 {
-            //         a {
-            //         }
-            //     }
-            // }
+            .table-row {
+                h4, h3, h2 {
+                    a {
+                    }
+                }
+            }
         }
     }
 }
 
-@media screen and (min-width:1780px) and (max-width:2400px) {
+@media screen and (min-width:1780px) and (max-width:2600px) {
     .table-container {
-        width: 60%;
+        width: 100%;
 
         .table-info-container {
+            width: 60%;
+            justify-content: space-around;
+            .row-container {
+                width: 100%;
+            }
             .table-row {
                 h4, h3, h2 {
-                    color: #fff;
+                    a {
+                    }
                 }
             }
         }
