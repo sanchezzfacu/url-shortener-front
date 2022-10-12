@@ -11,7 +11,7 @@ function UrlTable({urlInfo}) {
     
     return (
         <div className="table-container">
-            { urlInfo?.map(el => {
+            { urlInfo.length ? urlInfo.map(el => {
                 return (
                     <div className="table-info-container" key={el._id}>
                         <div className="row-container">
@@ -31,7 +31,11 @@ function UrlTable({urlInfo}) {
                         </div>
                     </div>
                 )
-            })}
+            }) : 
+                <div className="loading-screen">
+                    <h2>Loading...</h2>
+                </div>
+            }
         </div>
     )
 }
