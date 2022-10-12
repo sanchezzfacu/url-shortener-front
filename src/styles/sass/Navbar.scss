@@ -9,9 +9,16 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #3486d2;
+    
     h1 {
         color: #fff;
         font-size: 2em;
+        a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
     }
 
 }

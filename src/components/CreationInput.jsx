@@ -26,11 +26,16 @@ function CreationInput() {
             </form>
             <div className={Object.entries(urlInfo).length ? 'url-info-container' : 'url-info-none'}>
                 <div className='url-created-info'>
-                    <h4>{urlInfo.fullUrlVersion?.length > 40 ? urlInfo.fullUrlVersion.slice(0, 40) + '...' : ''}</h4>
+                    <h4>{urlInfo.fullUrlVersion}</h4>
                     <h4><a href={urlInfo.shortUrlVersion}>{axios.defaults.baseURL + '/' + urlInfo.shortUrlVersion}</a></h4>
                 </div>
                 <hr />
                 <a className='create-another-url' href="/">Create another short url</a>
+            </div>
+            <div className='redirect-all-urls'>
+                <a href="/all">
+                    <h3>View all URLS</h3>
+                </a>
             </div>
         </div>
     )

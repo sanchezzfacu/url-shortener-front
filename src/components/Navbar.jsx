@@ -5,7 +5,7 @@ import '../styles/css/Navbar.css'
 function Navbar() {
     return (
         <nav>
-            <h1>URL shortener</h1>
+            <h1><a href='/'>URL shortener</a></h1>
         </nav>
     )
 }

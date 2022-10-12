@@ -6,10 +6,15 @@ nav {
   height: 90px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-bottom: 1px solid #3486d2; }
   nav h1 {
     color: #fff;
     font-size: 2em; }
+    nav h1 a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer; }
 
 @media screen and (min-width: 1780px) and (max-width: 2480px) {
   nav h1 {
