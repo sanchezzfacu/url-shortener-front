@@ -2,6 +2,7 @@ nav {
   width: 100%;
   background: #262626;
   z-index: 1;
+  position: relative;
   height: 90px;
   display: flex;
   justify-content: center;
