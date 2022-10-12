@@ -12,7 +12,6 @@ function CreationInput() {
         let urlObj = {fullUrlVersion: input}
         const postUrl = await axios.post('/createUrl', urlObj )
         setUrlInfo(postUrl.data)
-        console.log(axios.defaults.baseURL + '/' + urlInfo.shortUrlVersion)
     }
 
     function handleInputChange(e) {
@@ -22,15 +21,16 @@ function CreationInput() {
     return (
         <div className='form-container'>
             <form onSubmit={generateUrl}>
-                <input onChange={handleInputChange} type="url" required/>
+                <input onChange={handleInputChange} type="url" placeholder='Enter an URL..' required/>
                 <button type="submit">Generate URL</button>
             </form>
-            <div >
-                <div className={Object.entries(urlInfo).length ? 'url-info-container' : 'url-info-none'}>
-                    <h4>{urlInfo.fullUrlVersion}</h4>
+            <div className={Object.entries(urlInfo).length ? 'url-info-container' : 'url-info-none'}>
+                <div className='url-created-info'>
+                    <h4>{urlInfo.fullUrlVersion?.length > 40 ? urlInfo.fullUrlVersion.slice(0, 40) + '...' : ''}</h4>
                     <h4><a href={urlInfo.shortUrlVersion}>{axios.defaults.baseURL + '/' + urlInfo.shortUrlVersion}</a></h4>
-                    <h4>{urlInfo.clicks}</h4>
                 </div>
+                <hr />
+                <a className='create-another-url' href="/">Create another short url</a>
             </div>
         </div>
     )

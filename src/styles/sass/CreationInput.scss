@@ -7,47 +7,162 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: $white-bg;
-    padding: 150px 0;
+    height: 80vh;
     form {
-        width: 100%;
+        padding: 70px 20px;
+        background: $black-nav;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        z-index: 1;
         input {
             outline: none;
             border: 1px solid #3486d2;
             border-right: none;
-            padding-left: 15px;
+            height: 40px;
         }
         button {
             color: #fff;
             border: none;
             background: #3486d2;
-            padding: 0px 15px;
             font-weight: 600;
             cursor: pointer;
+            height: 40px;
+
         }
     }
 
+    .url-info-container {
+        display: block;
+        z-index: 1;
+        background: $black-nav;
+        margin-top: 40px;
+        .url-created-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+            h4 {
+                font-size: 1.1em;
+                color: #fff;
+                a {
+                    color: #3694ca;
+                    
+                    transition: all ease 0.3s;
+                }
+                a:hover {
+                    color: #256286;
+                }
+            }
+        }
+        .create-another-url {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            padding: 20px 0;
+
+        }
+        hr {
+            margin: 0px 30px;
+        }
+    }
     .url-info-none {
         display: none;
     }
-    .url-info-container {
-        display: block;
-    }
 }
 
-@media screen and (min-width: 1280px) and (max-width:1780px) {
-    form {
-        flex-direction: column;
-        input {
-            height: 40px;
-            width: 450px;
+@media screen and (min-width: 300px) and (max-width:1279px) {
+    .form-container {
+        display: flex;
+        form {
+            width: 100%;
+            input {
+                width: 100%;
+                padding: 10px;
+            }
+            button {
+                margin-right: 20px;
+                height: 40px;       
+                padding: 0px 10px;         
+            }
         }
-        button {
-            height: 40px;                
+        .url-info-container {
+            width: 90%;
+
+            .url-created-info {
+                flex-direction: column;
+                h4 {
+                    margin: 10px 0;
+                    a {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        .create-another-url {
+            font-size: 1.2em;
+        }
+    }
+}
+@media screen and (min-width: 1280px) and (max-width:1780px) {
+    .form-container {
+        form {
+            display: flex;
+            width: 60%;
+            input {
+                height: 40px;
+                width: 450px;
+                padding-left: 15px;
+            }
+            button {
+                height: 40px;      
+                padding: 0px 15px;
+            }
+        }
+        .url-info-container {
+            width: 80%;
+            .url-created-info {
+                h4 {
+                    a {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        .create-another-url {
+            font-size: 1.2em;
+        }
+    }
+}
+@media screen and (min-width: 1781px) and (max-width:2400px) {
+    .form-container {
+        form {
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            input {
+                height: 40px;
+                width: 450px;
+                padding-left: 15px;
+            }
+            button {
+                height: 40px;         
+                padding: 0px 15px;
+            }
+        }
+        .url-info-container {
+            width: 60%;
+            .url-created-info {
+                h4 {
+                    a {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        .create-another-url {
+            font-size: 1.4em;
         }
     }
 }
